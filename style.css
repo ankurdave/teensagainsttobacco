@@ -1,0 +1,273 @@
+body {
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	line-height: 1.3em;
+	background-color: white;
+	text-align: center;
+}
+
+p {
+	margin: 0.5em 0;
+}
+
+#container {
+	margin: 0 auto;
+	padding: 2em 2em 2em 2.5em;
+	max-width: 50em;
+	background-color: white;
+	text-align: left;
+}
+
+/** Header *******************************************************************/
+.logo a {
+	display: block;
+    float: left;
+	font-size: 1.3em;
+	line-height: 2em;
+	padding: 0 0.7em;
+	color: white;
+	background-color: black;
+}
+
+.logo a:link, .logo a:visited {
+	color: white;
+	background-color: black;
+}
+
+.logo a:hover {
+	color: white;
+	background-color: #0062FF;
+	text-decoration: none;
+}
+
+.nav {
+	display: block;
+    clear: both;
+    padding: 1em 0 0 0;
+    margin: 0;
+}
+
+.nav li {
+	list-style-type: none;
+	display: inline;
+	font-size: 1.2em;
+	line-height: 2em;
+    padding: 0 0.3em;
+    border-right: 2px solid gray;
+}
+
+.nav li:last-child {
+    border-right: none;
+}
+
+.nav li.current a:link:not(.inactive),
+.nav li.current a:visited:not(.inactive),
+.nav li.current a:hover:not(.inactive) {
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.header {
+	padding-bottom: 0.9em;
+	margin-bottom: 0.7em;
+	margin-left: -0.5em;
+    text-align: center;
+}
+
+.header-clear {
+	clear: both;
+}
+
+/** Home page elements *******************************************************/
+#beforeafter {
+    color: white;
+    background-color: black;
+    text-align: center;
+    height: 15em;
+}
+
+#mission {
+    float: left;
+    width: 49%;
+    background-color: #ccc;
+    height: 10em;
+}
+
+#subscribe {
+    float: right;
+    width: 49%;
+    border: 1px solid gray;
+    margin-top: 2.5em;
+    height: 5em;
+}
+
+#share {
+    clear: both;
+    height: 2em;
+    background-color: #ccf;
+}
+
+#problem {
+    height: 5em;
+    background-color: #fcc;
+}
+
+#difference {
+    height: 5em;
+    background-color: #cfc;
+}
+
+/** Footer *******************************************************************/
+.footer {
+	font-size: 80%;
+	color: #666;
+	text-align: center;
+	padding-top: 0.5em;
+	border-top: 1px solid #CCC;
+	margin-top: 0.7em;
+	margin-left: -0.5em;
+	clear: both;
+}
+
+/** Other styles *************************************************************/
+h2 {
+	margin: 1.5em 0 0.75em -0.5em;
+	color: #333;
+	font-size: 1.4em;
+}
+
+a {
+	text-decoration: none;
+}
+a:link {
+	color: #003994;
+}
+a:visited {
+	color: #2D4161;
+}
+a:hover {
+	text-decoration: underline;
+	color: #0062FF;
+}
+
+a img {
+	border: thin solid #CCC;
+}
+a:hover img {
+    border: thin solid #999;
+}
+
+ul {
+	margin-left: 2.5em;
+	padding-left: 0;
+}
+
+li {
+	line-height: 1.2em;
+	margin: 0.5em 0;
+}
+ul.compact li {
+	margin: 0.1em 0;
+}
+
+ul.inline {
+	margin: 0.5em 0;
+	padding: 0;
+}
+ul.inline li {
+	display: inline;
+}
+ul.inline li:after {
+	content: " - ";
+}
+ul.inline li:last-child:after {
+	content: "";
+}
+
+p.read-more {
+	font-style: italic;
+	font-size: 90%;
+	position: relative;
+	top: -0.4em;
+}
+
+.abstract {
+    margin-left: 2em;
+    margin-right: 12em;
+}
+
+/** Side images **************************************************************/
+.sideimg {
+    display: block;
+	margin: 0.7em 0 0.7em 0.7em;
+	padding: 0em;
+	border: thin solid white;
+	float: right;
+	clear: both;
+	width: 20%;
+}
+
+.sideimg img {
+    width: 100%;
+}
+
+.sideimg .caption {
+    display: block;
+    font-size: small;
+    color: #666;
+}
+
+.thumbs img {
+	border: thin solid #BBB;
+	margin: 1em;
+}
+
+/** Resume *******************************************************************/
+.period, .date {
+	white-space: nowrap;
+}
+
+.title {
+	font-style: italic;
+}
+
+.position, .school {
+	margin-bottom: 0.8em;
+}
+
+.position table.position-header, .school table.position-header {
+	border-spacing: 0;
+	margin-bottom: 0.5em;
+}
+
+.position .employer, .school .schoolname {
+	font-weight: bold;
+	width: 100%; /* to make the table expand but respect floats */
+}
+
+.position .location, .school .gpa {
+	font-style: italic;
+	text-align: right;
+	white-space: nowrap; /* to avoid getting crushed by the 100%-width employer */
+}
+
+.position .jobtitle {
+	font-style: italic;
+}
+
+.position .period, .school .gpa {
+	text-align: right;
+}
+
+.school .period {
+	text-align: right;
+	white-space: nowrap; /* to avoid getting crushed by the 100%-width schoolname */
+}
+
+.school .major {
+	font-style: italic;
+}
+
+.publications .venue {
+    font-style: italic;
+}
