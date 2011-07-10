@@ -131,12 +131,6 @@ a.calltoaction:after {
     content: " >";
 }
 
-
-#difference {
-    height: 5em;
-    background-color: #cfc;
-}
-
 .sidefigure {
     font-size: 200%;
     font-family: Impact, sans-serif;
@@ -148,13 +142,44 @@ a.calltoaction:after {
     margin: 0.5em 1em 0.5em 0.5em;
 }
 
+.h2-wrap {
+    text-align: center;
+    position: relative;
+    margin: 2em 0;
+}
+
+.h2-wrap h2 {
+    float: right;
+    position: relative;
+    left: -50%;
+    margin-top: -0.5em; /* line-height / 2 */
+
+    text-transform: uppercase;
+    font-family: Impact, sans-serif;
+    font-weight: normal;
+    line-height: 1em;
+}
+
+.h2-inner {
+    position: relative;
+    left: 50%;
+
+    background-color: white;
+    padding: 0 0.5em;
+}
+
+.h2-before {
+    position: relative;
+    height: 1px;
+    border-top: thin dashed gray;
+}
+
 /** Footer *******************************************************************/
 .footer {
 	font-size: 80%;
 	color: #666;
 	text-align: center;
 	padding-top: 0.5em;
-	border-top: 1px solid #CCC;
 	margin-top: 0.7em;
 	margin-left: -0.5em;
 	clear: both;
