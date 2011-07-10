@@ -1,82 +1,80 @@
 body {
 	font-family: "Helvetica Neue", Arial, sans-serif;
 	line-height: 1.3em;
-	background-color: white;
-	text-align: center;
+	background-color: black;
+    color: white;
+    text-align: center;
+    margin: 0;
 }
 
 p {
 	margin: 0.5em 0;
 }
 
-#container {
-	margin: 0 auto;
-	padding: 2em 2em 2em 2.5em;
-	max-width: 50em;
-	background-color: white;
-	text-align: left;
-}
-
 /** Header *******************************************************************/
-.logo a {
-	display: block;
-    float: left;
-	font-size: 1.3em;
-	line-height: 2em;
-	padding: 0 0.7em;
-	color: white;
-	background-color: black;
+.header {
+    text-align: left;
 }
 
-.logo a:link, .logo a:visited {
-	color: white;
-	background-color: black;
+.logo-wrap {
+    background-color: #2E2E2E;
+    width: 100%;
 }
 
-.logo a:hover {
-	color: white;
-	background-color: #0062FF;
-	text-decoration: none;
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 50em;
+    text-align: left;
+    padding: 0;
+}
+.logo a:link, .logo a:visited, .logo a:hover, .logo a:active {
+    font-family: Georgia, serif;
+    color: white;
+    text-decoration: none;
+    line-height: 2em;
+    font-size: 150%;
 }
 
 .nav {
-	display: block;
-    clear: both;
-    padding: 1em 0 0 0;
-    margin: 0;
+    display: block;
+    margin: 0.5em auto;
+    max-width: 50em;
+    text-align: left;
 }
 
 .nav li {
 	list-style-type: none;
 	display: inline;
-	font-size: 1.2em;
+	font-size: 80%;
 	line-height: 2em;
-    padding: 0 0.3em;
+    padding: 0 1em 0 0.8em;
     border-right: 2px solid gray;
+    text-transform: uppercase;
+}
+
+.nav li:first-child {
+    padding-left: 0;
 }
 
 .nav li:last-child {
     border-right: none;
 }
 
-.nav li.current a:link:not(.inactive),
-.nav li.current a:visited:not(.inactive),
-.nav li.current a:hover:not(.inactive) {
-	color: black;
-	text-decoration: none;
-	font-weight: bold;
+.nav li a {
+    color: #CCC;
+    text-decoration: none;
 }
 
-.header {
-	padding-bottom: 0.9em;
-	margin-bottom: 0.7em;
-	margin-left: -0.5em;
-    text-align: center;
+/** Body **/
+
+#container {
+	margin: 0 auto;
+	padding: 2em 2em 2em 2.5em;
+	max-width: 50em;
+	text-align: left;
 }
 
-.header-clear {
-	clear: both;
-}
 
 /** Home page elements *******************************************************/
 #beforeafter {
@@ -86,35 +84,68 @@ p {
     height: 15em;
 }
 
-#mission {
+#summaryband {
+    background-color: #272727;
+    padding: 3em;
+}
+
+#missionsharecol {
     float: left;
     width: 49%;
-    background-color: #ccc;
-    height: 10em;
+}
+
+#mission {
+    font-size: 110%;
+    line-height: 1.5em;
+}
+
+#share {
+    height: 2em;
+    color: #69C;
 }
 
 #subscribe {
     float: right;
-    width: 49%;
-    border: 1px solid gray;
-    margin-top: 2.5em;
-    height: 5em;
+    width: 30%;
+    margin: 2.5em 5% 1em 0;
+    padding: 0.3em 0.8em 0.8em 0.8em;
+    background-color: #369;
+    height: 1.5em;
 }
 
-#share {
-    clear: both;
-    height: 2em;
-    background-color: #ccf;
+#detailsband {
+    background-color: white;
+    color: black;
+    padding: 3em;
 }
 
-#problem {
-    height: 5em;
-    background-color: #fcc;
+#detailsband a:link, #detailsband a:visited {
+	color: #207CDC;
+    font-weight: bold;
 }
+#detailsband a:hover {
+	text-decoration: underline;
+}
+
+a.calltoaction:after {
+    content: " >";
+}
+
 
 #difference {
     height: 5em;
     background-color: #cfc;
+}
+
+.sidefigure {
+    font-size: 200%;
+    font-family: Impact, sans-serif;
+    color: #69C;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    float: left;
+    margin: 0.5em 1em 0.5em 0.5em;
 }
 
 /** Footer *******************************************************************/
@@ -140,6 +171,7 @@ a {
 	text-decoration: none;
 }
 a:link {
+
 	color: #003994;
 }
 a:visited {
@@ -270,4 +302,9 @@ p.read-more {
 
 .publications .venue {
     font-style: italic;
+}
+
+
+.clear {
+    clear: both;
 }
