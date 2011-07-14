@@ -77,19 +77,33 @@ p {
 
 
 /** Home page elements *******************************************************/
-#beforeafter {
+h1 {
+    text-transform: uppercase;
+    margin: 0 0 1em 0;
+    font-size: 1.5em;
+    color: #eee;
+}
+
+#beforeafter, .video {
     color: white;
     background-color: black;
     text-align: center;
     height: 15em;
 }
 
-#summaryband {
+.video {
+    height: 25em;
+    border: thin solid #333;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+#summaryband, .actions {
     background-color: #272727;
     padding: 3em;
 }
 
-#missionsharecol {
+#missionsharecol, #ngohelpcol {
     float: left;
     width: 49%;
 }
@@ -113,7 +127,7 @@ p {
     height: 1.5em;
 }
 
-#detailsband {
+#detailsband, .details {
     background-color: white;
     color: black;
     padding: 3em;
