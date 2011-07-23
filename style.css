@@ -88,12 +88,9 @@ h1 {
     color: white;
     background-color: black;
     text-align: center;
-    height: 15em;
 }
 
 .video {
-    height: 25em;
-    border: thin solid #333;
     padding: 1em;
     margin-bottom: 1em;
 }
@@ -217,9 +214,13 @@ a.calltoaction:after {
 
 /** Other styles *************************************************************/
 h2 {
-	margin: 1.5em 0 0.75em -0.5em;
+	margin: 1.5em 0 0.75em 0;
 	color: #333;
 	font-size: 1.4em;
+}
+
+h2.light {
+    color: #CCC;
 }
 
 a {
