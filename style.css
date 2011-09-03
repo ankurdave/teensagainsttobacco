@@ -90,6 +90,18 @@ h1 {
     text-align: center;
 }
 
+#beforeafter img {
+    width: 100%;
+}
+
+#beforeafter a img {
+    border: none;
+}
+
+#beforeafter a:hover img {
+    border: none;
+}
+
 .video {
     padding: 1em;
     margin-bottom: 1em;
@@ -97,12 +109,21 @@ h1 {
 
 #summaryband, .actions {
     background-color: #272727;
+}
+
+.actions {
     padding: 3em;
 }
 
+#summaryband {
+    text-align: center;
+}
+
 #missionsharecol, #ngohelpcol {
-    float: left;
-    width: 49%;
+    margin: 0 auto;
+    padding: 1em 0em 2em 0em;
+    width: 60%;
+    text-align: left;
 }
 
 #mission {
@@ -111,8 +132,8 @@ h1 {
 }
 
 #share {
-    height: 2em;
     color: #69C;
+    text-align: left;
 }
 
 #subscribe {
@@ -124,9 +145,16 @@ h1 {
     height: 1.5em;
 }
 
-#detailsband, .details {
+#detailsband, .details, #quittingbenefits, #quittips, #helpfulsites {
     background-color: white;
     color: black;
+}
+
+.details {
+    padding: 1em 2em;
+}
+
+#detailsband {
     padding: 3em;
 }
 
@@ -185,31 +213,15 @@ a.calltoaction:after {
     border-top: thin dashed gray;
 }
 
-#presentations, #quittingbenefits, #quittips, #helpfulsites {
-    border: thin solid gray;
-    margin: 0.5em;
-    padding: 0.5em;
-    height: 15em;
-    width: 45%;
-}
-
-#presentations, #quittips {
-    float: left;
-}
-
-#quittingbenefits, #helpfulsites {
-    float: right;
-}
-
 /** Footer *******************************************************************/
 .footer {
 	font-size: 80%;
 	color: #666;
 	text-align: center;
 	padding-top: 0.5em;
-	margin-top: 0.7em;
-	margin-left: -0.5em;
+    margin: 0.7em auto 0 auto;
 	clear: both;
+    width: 60%;
 }
 
 /** Other styles *************************************************************/
