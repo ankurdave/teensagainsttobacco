@@ -119,7 +119,7 @@ h1 {
     text-align: center;
 }
 
-#missionsharecol, #ngohelpcol {
+#missionsharecol, #ngohelpcol, #sharewrapper {
     margin: 0 auto;
     padding: 1em 0em 2em 0em;
     width: 60%;
@@ -216,12 +216,16 @@ a.calltoaction:after {
 /** Footer *******************************************************************/
 .footer {
 	font-size: 80%;
-	color: #666;
+	color: #999;
 	text-align: center;
 	padding-top: 0.5em;
     margin: 0.7em auto 0 auto;
 	clear: both;
     width: 60%;
+}
+
+.footer a:link, .footer a:visited {
+    color: #69C;
 }
 
 /** Other styles *************************************************************/
